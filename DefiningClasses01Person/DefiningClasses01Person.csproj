@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Person.cs" />
-    <Compile Include="PersonTest.cs" />
+    <Compile Include="PersonTest1.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
