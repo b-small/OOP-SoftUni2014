@@ -37,6 +37,8 @@
   <ItemGroup>
     <Compile Include="Battery.cs" />
     <Compile Include="BatteryType.cs" />
+    <Compile Include="Laptop.cs" />
+    <Compile Include="LaptopTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
