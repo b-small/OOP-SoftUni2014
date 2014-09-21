@@ -8,12 +8,12 @@ namespace StaticMemsAndNamespaces01Point3D
         private double y;
         private double z;
         private static readonly Point3D startingPoint = new Point3D(0, 0, 0);
-
-        public Point3D(double x, double y, double z)
+   
+        public Point3D(double x1, double x2, double x3)
         {
-            this.X = x;
-            this.Y = y;
-            this.Z = z;
+            this.X = x1;
+            this.Y = x2;
+            this.Z = x3;
         }
 
         public double X
@@ -51,15 +51,6 @@ namespace StaticMemsAndNamespaces01Point3D
         public override string ToString()
         {
             return string.Format("X: {0} Y: {1} Z: {2}", this.X, this.Y, this.Z);
-        }
-
-        static void Main(string[] args)
-        {
-            //quick check
-            Point3D one = new Point3D(3, 4.5, 3.2);
-            Console.WriteLine(Point3D.StartingPoint);
-            Console.WriteLine(one);
-
         }
     }
 }
