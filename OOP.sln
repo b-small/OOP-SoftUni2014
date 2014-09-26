@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry", "Geometry\Geomet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticMembersAndNamespacesHTMLDispatcher", "StaticMembersAndNamespacesHTMLDispatcher\StaticMembersAndNamespacesHTMLDispatcher.csproj", "{F9822A93-1034-4C81-9AD5-54B351142CFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling01Sqrt", "ExceptionHandling01Sqrt\ExceptionHandling01Sqrt.csproj", "{6C9812DC-2FBA-41D5-8C39-A60100FEC982}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling02EnterNrs", "ExceptionHandling02EnterNrs\ExceptionHandling02EnterNrs.csproj", "{5C01EAF4-7123-4258-AD64-DF767C9AF916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{F9822A93-1034-4C81-9AD5-54B351142CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9822A93-1034-4C81-9AD5-54B351142CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9822A93-1034-4C81-9AD5-54B351142CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9812DC-2FBA-41D5-8C39-A60100FEC982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9812DC-2FBA-41D5-8C39-A60100FEC982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9812DC-2FBA-41D5-8C39-A60100FEC982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9812DC-2FBA-41D5-8C39-A60100FEC982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C01EAF4-7123-4258-AD64-DF767C9AF916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C01EAF4-7123-4258-AD64-DF767C9AF916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C01EAF4-7123-4258-AD64-DF767C9AF916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C01EAF4-7123-4258-AD64-DF767C9AF916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
