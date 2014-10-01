@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Student.cs" />
+    <Compile Include="StudentSpecialty.cs" />
     <Compile Include="StudentTest.cs" />
   </ItemGroup>
   <ItemGroup>

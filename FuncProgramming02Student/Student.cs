@@ -14,8 +14,9 @@ namespace FuncProgramming02Student
         private string email;
         private IList<int> marks;
         private short gNumber;
+        private string gName;
 
-        public Student(string fn, string ln, int a, string fan, string p, string e, IList<int> m, short gn)
+        public Student(string fn, string ln, int a, string fan, string p, string e, IList<int> m, short gn, string gname)
         {
             this.FirstName = fn;
             this.LastName = ln;
@@ -25,6 +26,7 @@ namespace FuncProgramming02Student
             this.Email = e;
             this.Marks = m;
             this.GroupNr = gn;
+            this.GroupName = gname;
         }
 
         public string FirstName
@@ -124,6 +126,19 @@ namespace FuncProgramming02Student
                     throw new ArgumentOutOfRangeException();
                 }
                 this.gNumber = value;
+            }
+        }
+
+        public string GroupName
+        {
+            get { return this.gName; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException();
+                }
+                this.gName = value;
             }
         }
 
@@ -267,6 +282,43 @@ namespace FuncProgramming02Student
             }
         }
 
+        public static void ByGroupName(List<Student> students)
+        {
+            var byGroupName =
+                from st in students
+                group st by st.GroupName into g
+                orderby g.Key
+                select new { GroupName = g.Key, students = g.ToList() };
+
+            Console.WriteLine("\nStudents by Group name: ");
+            foreach (var item in byGroupName)
+            {
+                Console.WriteLine("\nGROUP {0} ", item.GroupName);
+                Console.WriteLine("{0}", string.Join("\n", item.students));
+            }
+        }
+
+        public static void BySpecialty(List<Student> students, List<StudentSpecialty> specialties)
+        {
+            var studentsJoinedBySpecialties = students
+       .Join(specialties,
+           s => s.FacultyNr,
+           sp => sp.FacultyNr,
+           (s, sp) =>
+               new
+               {
+                   FullName = s.FirstName + " " + s.LastName,
+                   FacultyNumber = s.FacultyNr,
+                   Specialty = sp.SpecialtyName
+               })
+       .OrderBy(s => s.FullName);
+
+            Console.WriteLine("Students joined by Specialties: ");
+            foreach (var student in studentsJoinedBySpecialties)
+            {
+                Console.WriteLine("{0}, {1}, {2}", student.FullName, student.FacultyNumber, student.Specialty);
+            }
+        }
 
         public override string ToString()
         {
