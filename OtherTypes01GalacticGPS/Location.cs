@@ -8,7 +8,8 @@ namespace OtherTypes01GalacticGPS
         private double longitude;
         private Planet currentPlanet;
 
-        public Location(double latitude, double longitude, Planet p) : this()
+        public Location(double latitude, double longitude, Planet p)
+            : this()
         {
             this.Latitude = latitude;
             this.Longitude = longitude;

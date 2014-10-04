@@ -2,13 +2,13 @@
 {
     public enum Planet
     {
-        Mercury, 
-        Venus, 
-        Earth, 
-        Mars, 
-        Jupiter, 
-        Saturn, 
-        Uranus, 
+        Mercury,
+        Venus,
+        Earth,
+        Mars,
+        Jupiter,
+        Saturn,
+        Uranus,
         Neptune
     }
 }
